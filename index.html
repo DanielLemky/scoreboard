@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="scoreboard.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi,user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <style>html, body { overflow-x: hidden; }</style>
+        <title>Scoreboard</title>
+    </head>
+    <body class="noselect">
+        <div class="container header">
+            <h1 class="text-center">MATCH UP</h1>
+        </div>
+        <div class="wrapper container jumbotron scoreboard">
+            
+          <div class="row">
+            <div class="col-6 sideContainer" id="side1Container">
+              <h2 id="side1Name" class="text-center sideName"></h2>
+              <h1 id="side1Score" class="text-center score"></h1>
+              <div><span id="side1Minus" class="arrow"><i class="material-icons">keyboard_arrow_left</i></span><span id="side1Add" class="arrow"><i class="material-icons">keyboard_arrow_right</i></span></div>
+            </div>
+            
+            <div class="col-6 sideContainer" id="side2Container">
+              <h2 id="side2Name" class="text-center sideName"></h2>
+              <h1 id="side2Score" class="text-center score"></h1>
+              <div><span id="side2Minus" class="arrow"><i class="material-icons">keyboard_arrow_left</i></span><span id="side2Add" class="arrow"><i class="material-icons">keyboard_arrow_right</i></span></div>
+            </div>
+            
+          </div>
+          
+          <div class="row">
+            <div class="col">
+              <div class="button">
+              <button onclick="reset()">Reset Scores</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="container instructions">
+          <div class="row">
+            <div class="col">
+              <p class="text-center">&#709;</p>
+              <p class="text-center">&#709;</p>
+              <p class="text-center">&#709;</p>
+              <p class="text-center">*** Instructions ***</p>
+            </div>
+          </div>
+          <div class="row" style="margin-top:40px">
+            <div class="col">
+              <p class="text-center">Use keyboard to change scores</p>
+              <p class="text-center">Click on player name to change name</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p class="text-center">"d" = -1 point</p>
+              <p class="text-center">"f" = +1 point</p>
+            </div>
+            <div class="col-6">
+              <p class="text-center">"k" = -1 point</p>
+              <p class="text-center">"j" = +1 point</p>
+            </div>
+            <div class="col">
+              <p class="text-center">"b" = swap sides</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <p>. Made by Daniel .</p>
+          </div>
+        </footer>
+    </body>
+</html>
